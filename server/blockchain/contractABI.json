@@ -1,0 +1,33 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "ticketId", "type": "string" },
+      { "internalType": "string", "name": "action", "type": "string" },
+      { "internalType": "string", "name": "userId", "type": "string" }
+    ],
+    "name": "logAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "ticketId", "type": "string" }
+    ],
+    "name": "getLogsByTicket",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "string", "name": "action", "type": "string" },
+          { "internalType": "string", "name": "userId", "type": "string" },
+          { "internalType": "uint256", "name": "timestamp", "type": "uint256" }
+        ],
+        "internalType": "struct Ticketing.Log[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

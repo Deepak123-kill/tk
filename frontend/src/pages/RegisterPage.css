@@ -1,0 +1,55 @@
+/* RegisterPage.css */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0a0a0a;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #00cc00;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 1rem;
+}
+
+.login-container input,
+.login-container select,
+.login-container button {
+  background-color: #111;
+  color: #0f0;
+  border: 2px solid #00cc00;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00cc00;
+  outline: none;
+  font-family: inherit;
+}
+
+.login-container input::placeholder {
+  color: #00cc00a0;
+}
+
+.login-container button:hover {
+  background-color: #00cc00;
+  color: #000;
+  cursor: pointer;
+}
+
+.login-container p {
+  text-align: center;
+  margin-top: 10px;
+  color: #ccc;
+}
